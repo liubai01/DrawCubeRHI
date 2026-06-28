@@ -1,0 +1,21 @@
+#include "/Engine/Public/Platform.ush"
+
+float4x4 LocalToClip;
+
+void MainVS(
+	in float4 InPosition : ATTRIBUTE0,
+	in float4 InColor : ATTRIBUTE1,
+	out float4 OutColor : TEXCOORD0,
+	out float4 OutPosition : SV_POSITION)
+{
+	OutPosition = mul(InPosition, LocalToClip);
+	OutColor = InColor;
+}
+
+void MainPS(
+	in float4 InColor : TEXCOORD0,
+	out float4 OutColor : SV_Target0)
+{
+	OutColor = InColor;
+}
+

@@ -1,0 +1,19 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.6",
+	"Category": "Rendering",
+	"Description": "Minimal Unreal Engine RHI cube rendering demo.",
+	"Modules": [
+		{
+			"Name": "DrawCubeRHIShaders",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit"
+		},
+		{
+			"Name": "DrawCubeRHI",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
+
