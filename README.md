@@ -1,6 +1,8 @@
 # DrawCubeRHI
 
-Minimal Unreal Engine 5.6 RHI cube rendering demo.
+Minimal Unreal Engine 5.5 RHI cube rendering demo.
+
+Note: the original learning HTML that inspired this repo was written against UE 5.6 source notes, but this standalone demo project targets UE 5.5.
 
 This demo bypasses UE's normal mesh/material rendering path. It records a small offscreen RHI draw list on the Render Thread, writes a cube into a `UTextureRenderTarget2D`, and lets UMG display that render target as a UI texture.
 
@@ -63,7 +65,7 @@ This avoids loading the whole game module too early while still making shader re
 
 ## Usage
 
-1. Open the project in Unreal Engine 5.6.
+1. Open the project in Unreal Engine 5.5.
 2. Add `URhiCubeRenderComponent` to an Actor.
 3. Create a `UTextureRenderTarget2D` asset.
 4. Assign it to `OutputRenderTarget`.
@@ -82,4 +84,3 @@ This avoids loading the whole game module too early while still making shader re
 - `FGraphicsPipelineStateInitializer`
 - `SetGraphicsPipelineState`
 - `DrawIndexedPrimitive`
-

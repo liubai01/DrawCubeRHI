@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.6",
+	"EngineAssociation": "5.5",
 	"Category": "Rendering",
 	"Description": "Minimal Unreal Engine RHI cube rendering demo.",
 	"Modules": [
@@ -16,4 +16,3 @@
 		}
 	]
 }
-
